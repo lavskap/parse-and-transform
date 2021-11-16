@@ -1,0 +1,58 @@
+{
+  "input": {"filename":"./input/JobDaemon.log", "separator": null},
+  "path": "./output",
+  "output": {
+    "txt": {
+      "filename": "job_daemon.txt",
+      "incl_titles": false,
+      "skip": true
+    },
+    "xls": {
+      "incl_titles": true,
+      "ext": "xlsx",
+      "skip": false
+    },
+    "csv": {
+      "filename": "JOB_daemon.csv",
+      "incl_titles": true,
+      "separator": "|",
+      "incl_rowid": true
+    },
+    "xml": {
+      "filename": "/work/Transformation/output/JOB_DAEMON.xml",
+      "element": "Logs",
+      "SubElement": "Data",
+      "incl_rowid": true
+    }
+  },
+  "fields": [
+    {
+      "id": 2,
+      "title": "Date",
+      "export": true,
+      "filter": ["10.07.2019"],
+      "type": ["date", "validate=yes", "%d.%m.%Y"]
+    },
+    {
+      "id": 3,
+      "title": "Time",
+      "export": true,
+      "filter": null,
+      "type":  ["time", "validate=yes", "%H:%M:%S"]
+    },
+    {
+      "id": 1,
+      "title": "MessageType",
+      "export": true,
+      "filter": ["INFO","ERROR"],
+      "type": ["string", "validate=no", null]
+    },
+    {
+      "id": 4,
+      "title": "MessageText",
+      "export": true,
+      "filter": null,
+      "type": ["string", "validate=no", null]
+    }
+  ]
+}
