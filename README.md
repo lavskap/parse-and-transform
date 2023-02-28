@@ -3,14 +3,14 @@
 Parse and transform a structured flat file into various formats: xml, xls, csv, txt.
 All rules and settings for Parsing & Transformation are defined in json config file.
 
-**Parsing**
+***Parsing***
 - Defines certain fields that have to be transformed
 - Restricts exported dataset with a list of values
 - Validates certain fields against specific datatype (date, time, number)
 - Reorders the exported fields
 - Rejects unstructured parts of the file
 
-**Transformation**
+***Transformation***
 - Defines output file (path, extensions)
 - Defines fields titles handling (include or not)
 - Defines separator (eg for CSV)
@@ -20,19 +20,22 @@ All rules and settings for Parsing & Transformation are defined in json config f
 - File should have defined structure (it can be some log file or migration structured data file)
 - Fields separator should be defined, else blank will be used as a separator
 
-**File example: <JobDaemon.log>**
+***File example: <JobDaemon.log>***
+
 ![image](https://user-images.githubusercontent.com/80430638/221964288-662047b3-5ecb-4ffd-9ea8-0fc978ab005b.png)
 
-**Sctructure**
-(4 fields are defined):
- - Date (date)
- - Time (datetime)
- - MesageType (string)
- - MessageText (string)
+***Sctructure***
+**- 4 fields are defined:**
+   - Date (date)
+   - Time (datetime)
+   - MesageType (string)
+   - MessageText (string)
+
 Separator is Blank (null)
 Config file <flat.json>
 
-**Transformation settings example**
+***Transformation settings example***
+
 ![image](https://user-images.githubusercontent.com/80430638/221964664-07f0d22c-00ff-4f68-bb2d-f2a434caf183.png)
 
 Defines the data export settings (eg: export type, filenames, files elements, some other constraints):
@@ -71,7 +74,7 @@ Defines the data export settings (eg: export type, filenames, files elements, so
    - **true =>** add rowid fields in the beginning
    - **false =>** do not add rowid and leave as it is (default)
 
-**Parse settings**
+***Parse settings***
 
 ![image](https://user-images.githubusercontent.com/80430638/221968574-1a460224-b1bf-4f55-8880-cd790b4298a2.png)
 
@@ -90,5 +93,11 @@ Defines the dataset to be transformed, with validation rules and data restrictio
 **- type:** defines field's type and validation settings. This helps to reject all unstructered part of file (as in the sample input file, seen on the first page).
    - **validate=yes =>** validate the given field value against type and format
    - **validate=no =>** do not validate the field (all rows will go through)
-   
-   From the example above: field Date will be validated against *DATE* format DD.MM.YYYY. Field *Time* will be validate against DATETIME format HH24:SS:MI. If validation fails, row won't be exporte
+
+***Setup the environmen***
+- Python 3.9
+- for xls integration, install openpyxl module (all other used modules are part of python installation)
+- create /work/transformation and put there flat.json, parse.py, transform.py and main.py source files
+- create subdirs: ./input and ./output
+![image](https://user-images.githubusercontent.com/80430638/221971016-4c0745b8-e2bc-4567-9b3c-0a25d0964eae.png)
+- put JobDaemon.log file into ./input directory
