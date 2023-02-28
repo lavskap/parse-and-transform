@@ -70,3 +70,23 @@ Defines the data export settings (eg: export type, filenames, files elements, so
 **- incl_rowid:** add extra field “rowid“ (row counter) as the first column in the exported file
    - **true =>** add rowid fields in the beginning
    - **false =>** do not add rowid and leave as it is (default)
+
+**Parse settings**
+![image](https://user-images.githubusercontent.com/80430638/221968574-1a460224-b1bf-4f55-8880-cd790b4298a2.png)
+
+Defines the dataset to be transformed, with validation rules and data restriction. All settings are wrapped in the list of fields. The fields in the list are sorted based on defined file structure. Every field has its out setting/rule as a hash, that handles parsing. All keys are mandatory.
+
+**- id:** sort no that handles field's position in the exported file
+
+**- title:** field's title, that can be included in export (see incl_title key in Transformation rules)
+
+**- export:** decides if the field should be transferred
+   - **true =>** export the given field
+   - **false =>** do not export
+
+**- filter:** list of values, restrict the exported data and defines the dataset. From the example above: Export where Date = 10.07.2019 AND MessageType in ('INFO', 'ERROR'). If export is null then no restriction applied against the given field
+
+**- type:** defines field's type and validation settings. This helps to reject all unstructered part of file (as in the sample input file, seen on the first page).
+   - **validate=yes =>** validate the given field value against type and format
+   - **validate=no =>** do not validate the field (all rows will go through)
+   From the example above: field Date will be validated against *DATE* format DD.MM.YYYY. Field *Time* will be validate against DATETIME format HH24:SS:MI. If validation fails, row won't be exporte
