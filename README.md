@@ -107,7 +107,9 @@ Defines the dataset to be transformed, with validation rules and data restrictio
 ![image](https://user-images.githubusercontent.com/80430638/221972038-f1dfcad6-378b-4951-9454-4c307c9d4a1f.png)
 ![image](https://user-images.githubusercontent.com/80430638/221972089-04ecda52-19ac-4e80-b1d9-5dd4e0fd9493.png)
 - check the results
-![image](https://user-images.githubusercontent.com/80430638/221972195-9edf0333-5c6d-41fc-bfc8-f069db22b23b.png)
+
+> esults:
+
 
 
 
