@@ -31,8 +31,8 @@ All rules and settings for Parsing & Transformation are defined in json config f
    - MesageType (string)
    - MessageText (string)
 
-Separator is Blank (null)
-Config file <flat.json>
+- Separator is Blank (null)
+- Config file <flat.json>
 
 ***Transformation settings example***
 
