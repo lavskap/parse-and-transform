@@ -1,13 +1,26 @@
-# BRG-IAG Brno
+# File Parse & Transform
 
-Visit us at [Github Pages Site](https://github.wdf.sap.corp/pages/grc-iag-brq/team-home/)
+Parse and transform a structured flat file into various formats: xml, xls, csv, txt.
+All rules and settings for Parsing & Transformation are defined in json config file.
 
-## How to write docu
+**Parsing:
+- Defines certain fields that have to be transformed
+- Restricts exported dataset with a list of values
+- Validates certain fields against specific datatype (date, time, number)
+- Reorders the exported fields
+- Rejects unstructured parts of the file
 
 Read [Official Docu](https://squidfunk.github.io/mkdocs-material/getting-started/)
 
-**Build docu website locally:**
+**Transformation:
+- Defines output file (path, extensions)
+- Defines fields titles handling (include or not)
+- Defines separator (eg for CSV)
+- Defines rowid handling (add or not)
 
-``` bash
-mkdocs serve
-```
+**Prerequisite:
+- File should have defined structure (it can be some log file or migration structured data file)
+- Fields separator should be defined, else blank will be used as a separator
+
+**File example: <JobDaemon.log>
+
