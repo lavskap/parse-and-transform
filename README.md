@@ -3,7 +3,7 @@
 Parse and transform a structured flat file into various formats: xml, xls, csv, txt.
 All rules and settings for Parsing & Transformation are defined in json config file.
 
-**Parsing:
+**Parsing**
 - Defines certain fields that have to be transformed
 - Restricts exported dataset with a list of values
 - Validates certain fields against specific datatype (date, time, number)
