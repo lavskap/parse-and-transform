@@ -31,8 +31,8 @@ All rules and settings for Parsing & Transformation are defined in json config f
    - MesageType (string)
    - MessageText (string)
 
-- Separator is Blank (null)
-- Config file <flat.json>
+> Separator is Blank (null)
+> Config file <flat.json>
 
 ***Transformation settings example***
 
@@ -101,3 +101,5 @@ Defines the dataset to be transformed, with validation rules and data restrictio
 - create subdirs: ./input and ./output
 ![image](https://user-images.githubusercontent.com/80430638/221971016-4c0745b8-e2bc-4567-9b3c-0a25d0964eae.png)
 - put JobDaemon.log file into ./input directory
+![image](https://user-images.githubusercontent.com/80430638/221971793-76462985-c54a-48da-85f6-01b95fe7b544.png)
+- run the script
