@@ -42,26 +42,24 @@ Defines the data export settings (eg: export type, filenames, files elements, so
 
 **- separator:** fields separator of input file, possible values: (“/t“ - tab, “|“ - pipe, null - blank)
 
-**- path:** directory, where all output files will be stored (used, if not explicitly set per type hash 
-below)
+**- path:** directory, where all output files will be stored (used, if not explicitly set per type hash below)
  - it is possible to use UNIX (“/“) style (it will be converted to Win style if running from Win)
  - if path starts with root (/work/) this will be automatically substituted with c:\work in Win
  
 **- output:** hash, that defines exported type's setting. Keys in types hashes are not mandatory.
  
- - *filename:* output filename. If not defined, input filename is used with extension (ext). If file
- is defined, but without full dir, then global path in previous key (path) will be used
+ - *filename:* output filename. If not defined, input filename is used with extension (ext). If file is defined, but without full dir, then global path in previous key (path) will be used
  
  - *incl_titles:* includes fields titles, defined in fields/title setting (see Parsing Rules below) 
-  - true => export also fields titles in exported file
-  - false => export data without titles (default)
+    true => export also fields titles in exported file
+    false => export data without titles (default)
  
  - *ext:* file extension. Used only if filename is not provided explicitly. If ext key is not given, 
  then “type“ is used as extension (ie for xls: extension will be xls and not xlsx)
  
  - *skip:* avoid exporting
-  - true => skip exporting to the given format
-  - false => do export (default)
+    true => skip exporting to the given format
+    false => do export (default)
  
  - *separator:* fields separator on output file (utilized only in csv export). Default: blank
  
