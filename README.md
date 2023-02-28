@@ -49,25 +49,25 @@ below)
  
 **- output:** hash, that defines exported type's setting. Keys in types hashes are not mandatory.
  
- *-filename:* output filename. If not defined, input filename is used with extension (ext). If file
+ *>filename:* output filename. If not defined, input filename is used with extension (ext). If file
  is defined, but without full dir, then global path in previous key (path) will be used
  
- *-incl_titles:* includes fields titles, defined in fields/title setting (see Parsing Rules below) 
+ *>incl_titles:* includes fields titles, defined in fields/title setting (see Parsing Rules below) 
  true => export also fields titles in exported file
  false => export data without titles (default)
  
- *-ext:* file extension. Used only if filename is not provided explicitly. If ext key is not given, 
+ *>ext:* file extension. Used only if filename is not provided explicitly. If ext key is not given, 
  then “type“ is used as extension (ie for xls: extension will be xls and not xlsx)
  
- *-skip:* avoid exporting
+ *>skip:* avoid exporting
  true => skip exporting to the given format
  false => do export (default)
  
- *-separator:* fields separator on output file (utilized only in csv export). Default: blank
+ *>separator:* fields separator on output file (utilized only in csv export). Default: blank
  
- *-element:* xml root element name (default: Log)
+ *>element:* xml root element name (default: Log)
  
- *-SubElement:* xml subelement name (default: Data)
+ *>SubElement:* xml subelement name (default: Data)
 
 **- incl_rowid:** add extra field “rowid“ (row counter) as the first column in the exported file
  true => add rowid fields in the beginning
