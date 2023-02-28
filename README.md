@@ -12,15 +12,16 @@ All rules and settings for Parsing & Transformation are defined in json config f
 
 Read [Official Docu](https://squidfunk.github.io/mkdocs-material/getting-started/)
 
-**Transformation:
+**Transformation**
 - Defines output file (path, extensions)
 - Defines fields titles handling (include or not)
 - Defines separator (eg for CSV)
 - Defines rowid handling (add or not)
 
-**Prerequisite:
+**Prerequisite**
 - File should have defined structure (it can be some log file or migration structured data file)
 - Fields separator should be defined, else blank will be used as a separator
 
-**File example: <JobDaemon.log>
+**File example: <JobDaemon.log>**
+![image](https://user-images.githubusercontent.com/80430638/221964288-662047b3-5ecb-4ffd-9ea8-0fc978ab005b.png)
 
