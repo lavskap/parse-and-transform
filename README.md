@@ -68,5 +68,5 @@ Defines the data export settings (eg: export type, filenames, files elements, so
  - *SubElement:* xml subelement name (default: Data)
 
 **- incl_rowid:** add extra field “rowid“ (row counter) as the first column in the exported file
-   - **true =>** add rowid fields in the beginning
-   - **false =>** do not add rowid and leave as it is (default)
+   - **true =>**  add rowid fields in the beginning
+   - **false =>**  do not add rowid and leave as it is (default)
