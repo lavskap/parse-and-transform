@@ -52,15 +52,14 @@ Defines the data export settings (eg: export type, filenames, files elements, so
  - *filename:* output filename. If not defined, input filename is used with extension (ext). If file is defined, but without full dir, then global path in previous key (path) will be used
  
  - *incl_titles:* includes fields titles, defined in fields/title setting (see Parsing Rules below) 
-    true => export also fields titles in exported file
-    false => export data without titles (default)
+  - **true =>** export also fields titles in exported file
+  - **false =>** export data without titles (default)
  
- - *ext:* file extension. Used only if filename is not provided explicitly. If ext key is not given, 
- then “type“ is used as extension (ie for xls: extension will be xls and not xlsx)
+ - *ext:* file extension. Used only if filename is not provided explicitly. If ext key is not given, then “type“ is used as extension (ie for xls: extension will be xls and not xlsx)
  
  - *skip:* avoid exporting
-    ~true => skip exporting to the given format
-    ~false => do export (default)
+   - **true =>** skip exporting to the given format
+   - **false =>** do export (default)
  
  - *separator:* fields separator on output file (utilized only in csv export). Default: blank
  
@@ -69,5 +68,5 @@ Defines the data export settings (eg: export type, filenames, files elements, so
  - *SubElement:* xml subelement name (default: Data)
 
 **- incl_rowid:** add extra field “rowid“ (row counter) as the first column in the exported file
- true => add rowid fields in the beginning
- false => do not add rowid and leave as it is (default)
+  - **true =>** add rowid fields in the beginning
+  - **false =>** do not add rowid and leave as it is (default)
