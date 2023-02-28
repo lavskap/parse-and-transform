@@ -24,7 +24,7 @@ All rules and settings for Parsing & Transformation are defined in json config f
 ![image](https://user-images.githubusercontent.com/80430638/221964288-662047b3-5ecb-4ffd-9ea8-0fc978ab005b.png)
 
 **Sctructure**
-- 4 fields are defined: 
+(4 fields are defined):
  - Date (date)
  - Time (datetime)
  - MesageType (string)
@@ -62,6 +62,6 @@ below)
  *-element:* xml root element name (default: Log)
  *-SubElement:* xml subelement name (default: Data)
 
-**-incl_rowid:** add extra field “rowid“ (row counter) as the first column in the exported file
+**- incl_rowid:** add extra field “rowid“ (row counter) as the first column in the exported file
  true => add rowid fields in the beginning
  false => do not add rowid and leave as it is (default)
