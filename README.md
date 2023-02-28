@@ -35,7 +35,7 @@ Config file <flat.json>
 **Transformation settings example**
 ![image](https://user-images.githubusercontent.com/80430638/221964664-07f0d22c-00ff-4f68-bb2d-f2a434caf183.png)
 
-Defines the data export settings (eg: export type, filenames, files elements, some other constraints)
+Defines the data export settings (eg: export type, filenames, files elements, some other constraints):
 
 **- input:** hash, that describes input file to be transformed (filename and fields separator, if any)
 
