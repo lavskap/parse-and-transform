@@ -45,7 +45,7 @@ Defines the data export settings (eg: export type, filenames, files elements, so
 
 **- filename:** input filename. If no path provided then path is current dir, ie "./"
 
-**- separator:** fields separator of input file, possible values: (“/t“ - tab, “|“ - pipe, null - blank)
+**- separator:** fields separator of input file, possible values: (“\t“ - tab, “|“ - pipe, null - blank)
 
 **- path:** directory, where all output files will be stored (used, if not explicitly set per type hash below)
  - it is possible to use UNIX (“/“) style (it will be converted to Win style if running from Win)
